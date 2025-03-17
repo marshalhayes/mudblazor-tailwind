@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+/** Include any CSS classes used from the client project */
+/** See here: https://tailwindcss.com/docs/functions-and-directives#source-directive */
+@source "../../MyApplication.Client";

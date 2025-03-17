@@ -5,11 +5,17 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
-
+  
   <ItemGroup>
     <ProjectReference Include="..\MyApplication.Client\MyApplication.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.*" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <TailwindVersion>latest</TailwindVersion>
+    <TailwindInputStyleSheetPath>Styles/main.css</TailwindInputStyleSheetPath>
+    <TailwindOutputStyleSheetPath>wwwroot/main.css</TailwindOutputStyleSheetPath>
+  </PropertyGroup>
+  
+  <Import Project="Tailwind.targets" />
 </Project>
